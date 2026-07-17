@@ -603,6 +603,10 @@
       animation: fadeUp 0.9s 0.18s cubic-bezier(0.22, 1, 0.36, 1) both;
     }
 
+    .hero-title-mobile-break {
+      display: none;
+    }
+
     /* Price Card */
     .price-card {
       background: rgba(255,255,255,0.08);
@@ -740,8 +744,8 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: #5E4438;
-      color: #fff;
+      background: #E9DCD3;
+      color: #5E4438;
       border: 1px solid #5E4438;
       border-radius: 100px;
       padding: 12px 28px;
@@ -757,7 +761,6 @@
 
     .hero-catalog-cta:hover {
       transform: translateY(-3px);
-      background: #4f392f;
       box-shadow: 0 10px 30px rgba(0,0,0,0.25);
       opacity: 0.92;
     }
@@ -865,6 +868,7 @@
 
     @media (max-width: 480px) {
       .hero-subtitle-mobile-break { display: block; }
+      .hero-title-mobile-break { display: block; }
       .hero-microcopy-mobile-break { display: block; }
       .price-card { padding: 18px 32px 20px; min-width: 220px; }
       .price-value { font-size: 52px; }
@@ -3083,7 +3087,6 @@
 
     /* Texto e ícones de todos os botões CTA */
     .hero-cta,
-    .hero-catalog-cta,
     .nav-wa,
     .drawer-wa,
     .cta-wa-btn,
@@ -3093,7 +3096,6 @@
     }
 
     .hero-cta svg,
-    .hero-catalog-cta svg,
     .nav-wa svg,
     .drawer-wa svg,
     .cta-wa-btn svg,
@@ -3193,7 +3195,7 @@
     <div class="hero-content">
       <p class="hero-subtitle">Estilo leve<br class="hero-subtitle-mobile-break"> para todos os momentos</p>
 
-      <h1 class="hero-title">Peças que<br>combinam com você</h1>
+      <h1 class="hero-title">Peças que<br>combinam<br class="hero-title-mobile-break"> com você</h1>
 
       <!-- CTA pill -->
       <a href="https://wa.me/5543988670606?text=Ol%C3%A1%2C%20Adoratta%21%20Quero%20conhecer%20as%20pe%C3%A7as." class="hero-cta" target="_blank" rel="noopener">
