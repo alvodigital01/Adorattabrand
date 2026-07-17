@@ -740,8 +740,8 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: #E9DCD3;
-      color: #5E4438;
+      background: #5E4438;
+      color: #fff;
       border: 1px solid #5E4438;
       border-radius: 100px;
       padding: 12px 28px;
@@ -757,6 +757,7 @@
 
     .hero-catalog-cta:hover {
       transform: translateY(-3px);
+      background: #4f392f;
       box-shadow: 0 10px 30px rgba(0,0,0,0.25);
       opacity: 0.92;
     }
@@ -2829,6 +2830,10 @@
       max-width: 440px;
     }
 
+    .cta-sub-mobile-break {
+      display: none;
+    }
+
     .cta-trust {
       display: flex;
       align-items: center;
@@ -2984,6 +2989,7 @@
     @media (max-width: 480px) {
       .cta-title { font-size: 58px; }
       .cta-sub { font-size: 14px; }
+      .cta-sub-mobile-break { display: block; }
       .cta-btns { flex-direction: column; width: 100%; }
       .cta-wa-btn, .cta-btn-secondary { width: 100%; justify-content: center; }
       .cta-trust-sep { display: none; }
@@ -3074,6 +3080,28 @@
 
     /* ─── MODAL SIZE BTN — transição ─── */
     .modal-size-btn { transition: background 0.15s, border-color 0.15s, color 0.15s, transform 0.15s; }
+
+    /* Texto e ícones de todos os botões CTA */
+    .hero-cta,
+    .hero-catalog-cta,
+    .nav-wa,
+    .drawer-wa,
+    .cta-wa-btn,
+    .cta-btn-secondary,
+    .modal-wa-btn {
+      color: #fff !important;
+    }
+
+    .hero-cta svg,
+    .hero-catalog-cta svg,
+    .nav-wa svg,
+    .drawer-wa svg,
+    .cta-wa-btn svg,
+    .cta-btn-secondary svg,
+    .modal-wa-btn svg {
+      color: #fff !important;
+      stroke: currentColor !important;
+    }
 
   </style>
 </head>
@@ -3280,7 +3308,7 @@
       </h2>
 
       <!-- Sub -->
-      <p class="cta-sub">Peças pensadas com cuidado, para acompanhar cada momento do seu dia.</p>
+      <p class="cta-sub">Peças pensadas com cuidado,<br class="cta-sub-mobile-break"> para acompanhar cada momento<br class="cta-sub-mobile-break"> do seu dia.</p>
 
       <!-- Trust badges -->
       <div class="cta-trust">
