@@ -122,6 +122,22 @@
 
     .logo:hover img { opacity: 0.8; }
 
+    .logo-text {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--header-ink);
+      white-space: nowrap;
+      margin-left: 12px;
+    }
+
+    .logo-mobile .logo-text {
+      font-size: 14px;
+      margin-left: 8px;
+    }
+
     /* Desktop nav links */
     .nav-links {
       display: flex;
@@ -3124,11 +3140,13 @@
       <!-- Logo desktop -->
       <a href="#inicio" class="logo" aria-label="Ir para o início">
         <img src="assets/images/logo/logo.jpg" alt="Adoratta Brand" />
+        <span class="logo-text">Adoratta Brand</span>
       </a>
 
       <!-- Logo mobile (centered) -->
       <a href="#inicio" class="logo logo-mobile" aria-label="Ir para o início">
         <img src="assets/images/logo/logo.jpg" alt="Adoratta Brand" style="height:38px;" />
+        <span class="logo-text">Adoratta Brand</span>
       </a>
 
       <!-- Desktop nav links -->
