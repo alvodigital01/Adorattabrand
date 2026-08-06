@@ -891,14 +891,31 @@
     }
 
     @media (max-width: 480px) {
-      .hero-subtitle-mobile-break { display: block; }
-      .hero-title-mobile-break { display: block; }
+      .hero {
+        min-height: 0;
+        aspect-ratio: 1143 / 1376;
+      }
+      .hero-content {
+        padding: 24px 16px;
+        gap: 10px;
+      }
+      .hero-subtitle {
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        white-space: nowrap;
+      }
+      .hero-title {
+        font-size: clamp(33px, 10.5vw, 38px);
+        line-height: 0.92;
+        white-space: nowrap;
+      }
+      .hero-subtitle-mobile-break { display: none; }
       .hero-microcopy-mobile-break { display: block; }
       .price-card { padding: 18px 32px 20px; min-width: 220px; }
       .price-value { font-size: 52px; }
       .price-currency { font-size: 30px; }
       .price-cents { font-size: 22px; }
-      .hero-cta { font-size: 11px; padding: 11px 20px; letter-spacing: 0.1em; }
+      .hero-cta { margin-top: 4px; font-size: 11px; padding: 11px 20px; letter-spacing: 0.1em; }
       .cashback-badge { font-size: 12px; padding: 8px 16px; }
     }
     /* ─── FOOTER ─── */
@@ -3224,7 +3241,7 @@
     <div class="hero-content">
       <p class="hero-subtitle">Minimalismo, conforto<br class="hero-subtitle-mobile-break"> e elegância.</p>
 
-      <h1 class="hero-title">Uma marca pensada<br>para mulheres<br class="hero-title-mobile-break"> reais.</h1>
+      <h1 class="hero-title">Uma marca pensada<br>para mulheres reais.</h1>
 
       <!-- CTA pill -->
       <a href="https://wa.me/5543988670606?text=Ol%C3%A1%2C%20Adoratta%21%20Quero%20conhecer%20as%20pe%C3%A7as." class="hero-cta" target="_blank" rel="noopener">
